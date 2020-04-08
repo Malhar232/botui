@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* **
+-- BotUI styling
+** */
+.botui-container,
+.botui-messages-container {
+	background: transparent;
+}
+
+.human.botui-message-content.text {
+	background: white;
+	color: rgb(48, 41, 58);
+}
+
+.botui-message-content {
+	font-size: 18px;
+	font-size: 1rem;
+	font-family: 'Montserrat';
+	background: rgb(48, 41, 58);
+	color: white;
+}
+
+.botui-messages-container {
+	max-height: 55vh;
+	overflow-y: auto;
+}
+
+.botui-actions-buttons-button {
+	background-color: rgb(95, 175, 226);
+	font-size: 21.599px;
+	font-size: 1.2rem ;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out
+}
+
+.botui-actions-buttons-button:focus {
+  color: rgb(95, 175, 226);
+  background-color: white;
+}
+
+.botui-actions-buttons-button:not(:focus) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.botui-actions-text-input {
+	color: #CDACE0;
+	font-size: 21.599px;
+	font-size: 1.2rem ;
+	border-bottom: solid 2px currentColor;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	-webkit-transition: 300ms ease-in-out;
+	transition: 300ms ease-in-out
+}
+
+.botui-actions-text-input:not(:focus) {
+  font-style: italic;
+}
+
+.botui-action-text-icon {
+	color: currentColor;
+}
+
+/* **
+-- Global styling
+** */
+
+
+header {
+	text-align: center;
+}
+
+.logo-wrapper {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: -30px 50px 0;
+	font-style: italic;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="4.5" /><feFuncG type="linear" slope="4.5" /><feFuncB type="linear" slope="4.5" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: grayscale(1) brightness(450%);
+          filter: grayscale(1) brightness(450%);
+}
+
+.bot-wrapper {
+	margin: 0 25%;
+	position: fixed;
+}
+
+
+
+
+  
+  a.btn{
+	width:150px;
+	display:block;
+	margin:-25px 0 0 -75px;
+	padding:1em 0;
+	position:absolute;
+	top:50%; left:50%;
+	font:1.125em 'Arial', sans-serif;
+	font-weight:700;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	border-radius:5px;
+	background:rgba(217,67,86,1);
+  }
+  
+  .modal-wrapper{
+	width:0%;
+	height:50%;
+	position:fixed;
+	top:0; left:0;
+	pointer-events: all;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+  }
+  
+  .modal-wrapper.open{
+	opacity:1;
+	visibility:visible;
+  }
+  
+  .modal{
+	width:600px;
+	height:400px;
+	display:block;
+	margin:50% 0 0 -300px;
+	position:relative;
+	top:50%; left:50%;
+
+	opacity:0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .modal-wrapper.open .modal{
+	margin-top:-200px;
+	opacity:1;
+  }
+  
+  .head {
+    width: 85%;
+    height: 32px;
+    padding: 10em 5%;
+    overflow: hidden;
+}
+  .btn-close{
+	width:32px;
+	height:32px;
+	display:block;
+	float:right;
+  }
+  
+  .btn-close::before, .btn-close::after{
+	content:'';
+	width:32px;
+	height:6px;
+	display:block;
+	background:black;
+  }
+  
+  .btn-close::before{
+	margin-top:12px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+  }
+  
+  .btn-close::after{
+	margin-top:-6px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+  }
+  
+  .content{
+	padding:5%;
+  }
